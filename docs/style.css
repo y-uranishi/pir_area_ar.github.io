@@ -5,12 +5,12 @@ body
     width: auto;
 }
 
-.model-viewer
+/* .model-viewer
 {
 
-}
+} */
 
-.custom-ar-button
+#custom-ar-button
 {
     font-size: 100px;
     position:absolute;
