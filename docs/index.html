@@ -5,6 +5,15 @@
     <title>Visualize the PIR area with AR</title>
   </head>
 
+  <style>
+    model-viewer
+    {
+      width:640px;
+      height:480px;
+      background-color: blue;
+    }
+  </style>
+
   <body>
     <link rel="stylesheet" type="model-viewer/css" href="./style.css">
   
@@ -33,7 +42,7 @@
       </model-viewer>
       <button id="custom-ar-button" slot="ar-button">Start AR</button>
       <script>
-        document.querySelector('#another-ar-button').addEventListener('click', (event) => {
+        document.querySelector('custom-ar-button').addEventListener('click', (event) => {
           const modelViewer = document.querySelector("model-viewer");
           modelViewer.activateAR();
         });
