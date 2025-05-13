@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
+
+
   <head>
     <meta charset="utf-8">
     <title>Visualize the PIR area with AR</title>
   </head>
+
+<div class="header">
+  header
+</div>
 
   <style>
     model-viewer
@@ -15,8 +21,10 @@
     }
   </style>
 
+<div class="main">
   <body>
     <link rel="stylesheet" type="model-viewer/css" href="./style.css">
+    <link rel="stylesheet" type="gridView/css" href="./gridView.css">
   
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <script nomodule src='https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js'></script>
@@ -205,4 +213,5 @@
         magic-leap>
       </model-viewer>
   </body>
+</div>
 </html>
