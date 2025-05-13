@@ -11,6 +11,7 @@
       width:640px;
       height:480px;
       background-color:azure;
+      border: 1px solid black;
     }
   </style>
 
@@ -20,23 +21,23 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <script nomodule src='https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js'></script>
 
-      <model-viewer
-        alt="model_Ver-11"
-        src="./3Dmodels/area_11.glb"
-        ios-src="./3Dmodels/area_11.usdz" 
-        ar
-        shadow-intensity="0"
-        camera-controls
-        disable-pan
-        disable-tap
-        camera-orbit="210deg 70deg 0"
-        orbit-sensitivity="0.2"            
-        ar
-        magic-leap>
-        <button id="custom-ar-button" slot="ar-button">Start AR</button>
-        <button class="hotspot" slot="hotspot-foot" data-position="0.25 0.1 0.18" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible"></button>
-        <div class="annotation">エリア透過に対応</div>
-      </model-viewer>
+    <model-viewer
+      alt="model_Ver-11"
+      src="./3Dmodels/area_11.glb"
+      ios-src="./3Dmodels/area_11.usdz" 
+      ar
+      shadow-intensity="0"
+      camera-controls
+      disable-pan
+      disable-tap
+      camera-orbit="210deg 70deg 0"
+      orbit-sensitivity="0.2"            
+      ar
+      magic-leap>
+      <button id=".custom-ar-button" slot="ar-button">Start AR</button>
+      <button class="hotspot" slot="hotspot-foot" data-position="0.25 0.1 0.18" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible"></button>
+      <div class="annotation">エリア透過に対応</div>
+    </model-viewer>
 
       <model-viewer
         alt="model_Ver-10"
@@ -49,7 +50,6 @@
         disable-tap
         camera-orbit="30deg 70deg 0"
         orbit-sensitivity="0.2"
-        interaction-prompt="auto"
         ar
         magic-leap>
       </model-viewer>
@@ -65,7 +65,6 @@
         disable-tap
         camera-orbit="30deg 70deg 0"
         orbit-sensitivity="0.2"
-        interaction-prompt="auto"
         ar
         magic-leap>
       </model-viewer>
@@ -81,7 +80,6 @@
         disable-tap
         camera-orbit="30deg 70deg 0"
         orbit-sensitivity="0.2"
-        interaction-prompt="auto"
         ar
         magic-leap>
       </model-viewer>
@@ -97,7 +95,6 @@
         disable-tap
         camera-orbit="30deg 70deg 0"
         orbit-sensitivity="0.2"
-        interaction-prompt="auto"
         ar
         magic-leap>
       </model-viewer>
@@ -113,7 +110,6 @@
         disable-tap
         camera-orbit="30deg 70deg 0"
         orbit-sensitivity="0.2"
-        interaction-prompt="auto"
         ar
         magic-leap>
       </model-viewer>
@@ -128,112 +124,84 @@
         disable-pan
         disable-tap
         camera-orbit="30deg 70deg 0"
-        orbit-sensitivity="0.2"
-        interaction-prompt="auto"
-        exposure="0.6"
-          
+        orbit-sensitivity="0.2"          
         ar
         magic-leap>
       </model-viewer>
+
+      <model-viewer
+        alt="model_Ver-4"
+        src="./3Dmodels/area_4.usdz"
+        ios-src="./3Dmodels/area_4.usdz" 
+        ar
+        shadow-intensity="0"
+        camera-controls
+        disable-pan
+        disable-tap
+        camera-orbit="30deg 70deg 0"
+        orbit-sensitivity="0.2"
+        ar
+        magic-leap>
+      </model-viewer>
+
+      <model-viewer
+        alt="model_Ver-3"
+        src="./3Dmodels/area_3.glb"
+        ios-src="./3Dmodels/area_3.usdz" 
+        ar
+        shadow-intensity="0"
+        camera-controls
+        disable-pan
+        disable-tap
+        camera-orbit="30deg 70deg 0"
+        orbit-sensitivity="0.2"
+        ar
+        magic-leap>
+      </model-viewer>
+    
+      <model-viewer
+        alt="model_Ver-2"
+        src="./3Dmodels/area_2.glb"
+        ios-src="./3Dmodels/area_2.usdz" 
+
+        shadow-intensity="0"
+        camera-controls
+        disable-pan
+        disable-tap
+        camera-orbit="30deg 70deg 0"
+        orbit-sensitivity="0.2"
+        ar
+        magic-leap>
+      </model-viewer>
+
       <model-viewer  
-      ar
-      alt="PIR3Dモデル_Ver-4"
-      src="./3Dmodels/area_4.usdz"
-      ios-src="./3Dmodels/area_4.usdz" 
-      style="width:800px;height:1000px;"
-    
-      background-color="#CC99CC"
-      shadow-intensity="0.4"
-      camera-controls
-      disable-pan
-      disable-tap
-      orbit-sensitivity="0.3"
-      interaction-prompt="auto"
-      exposure="0.6"
-        
-      ar
-      magic-leap>
-    </model-viewer>
+        alt="model_Ver-1"
+        src="./3Dmodels/area_1.glb"
+        ios-src="./3Dmodels/area_1.usdz"
+        ar
+        shadow-intensity="0"
+        camera-controls
+        disable-pan
+        disable-tap
+        camera-orbit="30deg 70deg 0"
+        orbit-sensitivity="0.2"
+        ar
+        magic-leap>
+      </model-viewer>
 
-    <model-viewer  
-    ar
-    alt="PIR3Dモデル_Ver-3"
-    src="./3Dmodels/area_3.glb"
-    ios-src="./3Dmodels/area_3.usdz" 
-    style="width:800px;height:1000px;"
-  
-      background-color="#CC99CC"
-      shadow-intensity="0.4"
-      camera-controls
-      disable-pan
-      disable-tap
-      orbit-sensitivity="0.3"
-      interaction-prompt="auto"
-      exposure="0.6"
-      
-      ar
-      magic-leap>
-    </model-viewer>
-    
-    <model-viewer  
-    ar
-    alt="PIR3Dモデル_Ver-2"
-    src="./3Dmodels/area_2.glb"
-    ios-src="./3Dmodels/area_2.usdz" 
-    style="width:800px;height:1000px;"
-
-      background-color="#CC99CC"
-      shadow-intensity="0.4"
-      camera-controls
-      disable-pan
-      disable-tap
-      orbit-sensitivity="0.3"
-      interaction-prompt="auto"
-      exposure="0.6"
-    
-    ar
-    magic-leap>
-    </model-viewer>
-
-    <model-viewer  
-    ar
-    alt="PIR3Dモデル_Ver-1"
-    src="./3Dmodels/area_1.glb"
-    ios-src="./3Dmodels/area_1.usdz" 
-    style="width:800px;height:1000px;"
-
-      background-color="#CC99CC"
-      shadow-intensity="0.4"
-      camera-controls
-      disable-pan
-      disable-tap
-      orbit-sensitivity="0.3"
-      interaction-prompt="auto"
-      exposure="0.6"
-    
-    ar
-    magic-leap>
-    </model-viewer>
-
-    <model-viewer  
-    ar
-    alt="人形3Dモデル"
-    src="./3Dmodels/leo.glb"
-    ios-src="./3Dmodels/leo_texture.usdz" 
-    style="width:800px;height:1000px;"
-
-      background-color="#CC99CC"
-      shadow-intensity="0.7"
-      camera-controls
-      disable-pan
-      disable-tap
-      disable-zoom
-      orbit-sensitivity="0.3"
-      interaction-prompt="auto"
-      exposure="0.6"
-    
-    ar
-    magic-leap>
-    </model-viewer>
+      <model-viewer  
+        alt="testModel"
+        src="./3Dmodels/leo.glb"
+        ios-src="./3Dmodels/leo_texture.usdz"
+        ar
+        shadow-intensity="0"
+        camera-controls
+        disable-pan
+        disable-tap
+        disable-zoom
+        orbit-sensitivity="0.2"
+        ar
+        magic-leap>
+      </model-viewer>
   </body>
 </html>
