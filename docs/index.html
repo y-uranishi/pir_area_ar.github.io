@@ -10,7 +10,8 @@
     {
       width:640px;
       height:480px;
-      background-color: blue;
+      background-color:azure;
+      
     }
   </style>
 
@@ -21,7 +22,7 @@
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
     </script>
 
-      <model-viewer  
+      <model-viewer
         ar
         alt="PIR3Dモデル_Ver-11"
         src="./3Dmodels/area_11.glb"
@@ -41,12 +42,6 @@
         magic-leap>
       </model-viewer>
       <button id="custom-ar-button" slot="ar-button">Start AR</button>
-      <script>
-        document.querySelector('custom-ar-button').addEventListener('click', (event) => {
-          const modelViewer = document.querySelector("model-viewer");
-          modelViewer.activateAR();
-        });
-      </script>
 
                   <model-viewer  
                   ar
@@ -264,4 +259,10 @@
     magic-leap>
     </model-viewer>
   </body>
+        <script>
+        document.querySelector('.custom-ar-button').addEventListener('click', (event) => {
+          const modelViewer = document.querySelector("model-viewer");
+          modelViewer.activateAR();
+        });
+      </script>
 </html>
