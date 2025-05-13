@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>PIRエリアをARで可視化してみよう!</title>
+    <title>Visualize the PIR area with AR</title>
   </head>
 
   <body>
@@ -30,8 +30,15 @@
                       
         ar
         magic-leap>
-        <button id="custom-ar-button" slot="ar-button">Start AR</button>
       </model-viewer>
+      <button id="custom-ar-button" slot="ar-button">Start AR</button>
+      <script>
+        document.querySelector('#another-ar-button').addEventListener('click', (event) => {
+          const modelViewer = document.querySelector("model-viewer");
+          modelViewer.activateAR();
+        });
+      </script>
+
                   <model-viewer  
                   ar
                   alt="PIR3Dモデル_Ver-10"
