@@ -40,8 +40,8 @@
                       
         ar
         magic-leap>
+        <button id="custom-ar-button" slot="ar-button">Start AR</button>
       </model-viewer>
-      <button id="custom-ar-button" slot="ar-button">Start AR</button>
 
                   <model-viewer  
                   ar
@@ -259,10 +259,4 @@
     magic-leap>
     </model-viewer>
   </body>
-        <script>
-        document.querySelector('.custom-ar-button').addEventListener('click', (event) => {
-          const modelViewer = document.querySelector("model-viewer");
-          modelViewer.activateAR();
-        });
-      </script>
 </html>
