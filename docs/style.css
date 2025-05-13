@@ -2,20 +2,23 @@
 
 body
 {
-        width:640px;
-        height:480px;
-        background-color: blue;
-
-        
+    width: auto;
 }
+
+/* .model-viewer
+{
+    ar
+    
+} */
 
 .custom-ar-button
 {
-    font-size: 30px;
+    font-size: 100px;
     position:relative;
     right:0;
     /* bottom: 16px; */
     /* left: 16px; */
+    border: 1px solid black;
 }
 
 .hotspot
