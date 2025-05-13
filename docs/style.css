@@ -14,7 +14,7 @@ body
 .custom-ar-button
 {
     font-size: 100px;
-    position:relative;
+    position:absolute;
     right:0;
     /* bottom: 16px; */
     /* left: 16px; */
