@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<link rel="stylesheet" type="gridView/css" href="./gridView.css">
-
   <head>
     <meta charset="utf-8">
     <title>Visualize the PIR area with AR</title>
@@ -14,7 +12,7 @@
   <div class="main">
 
 
-  <style class="model-viewer">
+  <style>
     model-viewer
     {
       width:640px;
@@ -25,13 +23,51 @@
   </style>
 
   <body>
+    <link rel="stylesheet" type="gridView/css" href="./gridView.css">
     <link rel="stylesheet" type="model-viewer/css" href="./style.css">
   
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <script nomodule src='https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js'></script>
 
     <div>
-    <model-viewer class="model-viewer"
+    <model-viewer
+      alt="model_Ver-13"
+      src="./3Dmodels/area_13.glb"
+      ios-src="./3Dmodels/area_13.usdz" 
+      ar
+      shadow-intensity="0"
+      camera-controls
+      disable-pan
+      disable-tap
+      camera-orbit="210deg 70deg 0"
+      orbit-sensitivity="0.2"            
+      ar
+      magic-leap>
+      <button class="hotspot" slot="hotspot-foot" data-position="0.25 0.1 0.18" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible"></button>
+      <div class="annotation">側面を消去</div>
+    </model-viewer>
+    </div>
+
+    <div>
+    <model-viewer
+      alt="model_Ver-12"
+      src="./3Dmodels/area_12.glb"
+      ios-src="./3Dmodels/area_12.usdz" 
+      ar
+      shadow-intensity="0"
+      camera-controls
+      disable-pan
+      disable-tap
+      camera-orbit="210deg 70deg 0"
+      orbit-sensitivity="0.2"            
+      ar
+      magic-leap>
+      <button class="hotspot" slot="hotspot-foot" data-position="0.25 0.1 0.18" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible"></button>
+      <div class="annotation">床面の色を距離別に変化</div>
+    </model-viewer>
+    </div>
+    <div>
+    <model-viewer
       alt="model_Ver-11"
       src="./3Dmodels/area_11.glb"
       ios-src="./3Dmodels/area_11.usdz" 
