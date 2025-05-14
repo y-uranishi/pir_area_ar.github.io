@@ -9,12 +9,10 @@
   </head>
 
 <div class="container">
-  <div class="header">header</div>
-  <div class="nav">nav</div>
-  <div class="main">main</div>
-  <div class="sidebar">sidebar</div>
-  <div class="footer">footer</div>
-</div>
+  <div class="header"></div>
+  <div class="nav"></div>
+  <div class="main">
+
 
   <style class="model-viewer">
     model-viewer
@@ -25,13 +23,6 @@
       border: 1px solid black;
     }
   </style>
-
-  <header class="header">
-    header
-  </header>
-  <main class="main">
-    main
-  </main>
 
   <body>
     <link rel="stylesheet" type="model-viewer/css" href="./style.css">
@@ -49,8 +40,6 @@
       camera-controls
       disable-pan
       disable-tap
-      max-field-of-view="20deg"
-      min-field-of-view="30deg"
       camera-orbit="210deg 70deg 0"
       orbit-sensitivity="0.2"            
       ar
@@ -225,5 +214,10 @@
         magic-leap>
       </model-viewer>
   </body>
+
+  </div>
+  <div class="sidebar"></div>
+  <div class="footer"></div>
+</div>
 
 </html>
