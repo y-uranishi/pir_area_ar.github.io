@@ -16,7 +16,7 @@
   <div class="footer">footer</div>
 </div>
 
-  <style>
+  <style class="model-viewer">
     model-viewer
     {
       width:640px;
@@ -40,7 +40,7 @@
     <script nomodule src='https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js'></script>
 
     <div>
-    <model-viewer
+    <model-viewer class="model-viewer"
       alt="model_Ver-11"
       src="./3Dmodels/area_11.glb"
       ios-src="./3Dmodels/area_11.usdz" 
@@ -49,6 +49,8 @@
       camera-controls
       disable-pan
       disable-tap
+      max-field-of-view="150deg"
+      min-field-of-view="50deg"
       camera-orbit="210deg 70deg 0"
       orbit-sensitivity="0.2"            
       ar
