@@ -28,7 +28,24 @@
   
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <script nomodule src='https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js'></script>
-
+    
+    <div>
+    <model-viewer
+      alt="model_Ver-14"
+      src="./3Dmodels/area_14.glb"
+      ios-src="./3Dmodels/area_14.usdz" 
+      ar
+      shadow-intensity="0"
+      camera-controls
+      disable-pan
+      disable-tap
+      camera-orbit="210deg 70deg 0"
+      orbit-sensitivity="0.2"            
+      ar
+      magic-leap>
+      <button class="hotspot" slot="hotspot-foot" data-position="0.25 0.1 0.18" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible"></button>
+      <div class="annotation">側面を消去</div>
+    </model-viewer>
     <div>
     <model-viewer
       alt="model_Ver-13"
