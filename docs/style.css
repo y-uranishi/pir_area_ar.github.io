@@ -16,7 +16,7 @@ h1
 .grid 
 {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* 横1列に固定 */
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); /* 横1列に固定 */
   gap: 50px;
   margin-top: 80px auto 0;
   max-width: 900px;          /* 最大幅を設定（お好みで調整） */
