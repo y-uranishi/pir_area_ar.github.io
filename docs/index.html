@@ -1,5 +1,40 @@
 <!DOCTYPE html>
 <html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>3Dモデル一覧</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>3Dモデルギャラリー</h1>
+
+  <div class="grid">
+    <model-viewer src="./3Dmodels/area_14.glb" ios-src="./3Dmodels/area_14.usdz" alt="モデル14" camera-controls disable-pan disable-tap camera-orbit="210deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_13.glb" ios-src="./3Dmodels/area_13.usdz" alt="モデル13" camera-controls disable-pan disable-tap camera-orbit="210deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_12.glb" ios-src="./3Dmodels/area_12.usdz" alt="モデル12" camera-controls disable-pan disable-tap camera-orbit="210deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_11.glb" ios-src="./3Dmodels/area_11.usdz" alt="モデル11" camera-controls disable-pan disable-tap camera-orbit="210deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_10.glb" ios-src="./3Dmodels/area_10.usdz" alt="モデル10" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_09.glb" ios-src="./3Dmodels/area_09.usdz" alt="モデル09" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_08.glb" ios-src="./3Dmodels/area_08.usdz" alt="モデル08" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_07.glb" ios-src="./3Dmodels/area_07.usdz" alt="モデル07" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_06.glb" ios-src="./3Dmodels/area_06.usdz" alt="モデル06" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_05.glb" ios-src="./3Dmodels/area_05.usdz" alt="モデル05" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_04.glb" ios-src="./3Dmodels/area_04.usdz" alt="モデル04" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_03.glb" ios-src="./3Dmodels/area_03.usdz" alt="モデル03" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_02.glb" ios-src="./3Dmodels/area_02.usdz" alt="モデル02" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/area_01.glb" ios-src="./3Dmodels/area_01.usdz" alt="モデル01" camera-controls disable-pan disable-tap camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <model-viewer src="./3Dmodels/leo.glb" ios-src="./3Dmodels/leo_texture.usdz" alt="testModel" camera-controls disable-pan disable-tap disable-zoom camera-orbit="30deg 70deg 0" orbit-sensitivity="0.2"></model-viewer>
+    <!-- 必要に応じてさらに追加 -->
+  </div>
+</body>
+</html>
+
+
+<!-- 以下、コメントアウト -->
+<!-- 
+<!DOCTYPE html>
+<html lang="ja">
 
   <head>
     <meta charset="utf-8">
@@ -44,7 +79,7 @@
       ar
       magic-leap>
       <button class="hotspot" slot="hotspot-foot" data-position="0.25 0.1 0.18" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible"></button>
-      <div class="annotation">側面を消去</div>
+      <div class="annotation">底面色を修正</div>
     </model-viewer>
     <div>
     <model-viewer
@@ -97,9 +132,9 @@
       orbit-sensitivity="0.2"            
       ar
       magic-leap>
-      <!-- <button id="custom-ar-button" slot="ar-button">Start AR</button> -->
+      <button id="custom-ar-button" slot="ar-button">Start AR</button>
       <button class="hotspot" slot="hotspot-foot" data-position="0.25 0.1 0.18" data-normal="-0.07 0.97 0.23" data-visibility-attribute="visible"></button>
-      <div class="annotation">エリア透過に対応</div>
+      <div class="annotation">エリアの前後方向を逆転</div>
     </model-viewer>
     </div>
       <model-viewer
@@ -273,4 +308,4 @@
   <div class="footer"></div>
 </div>
 
-</html>
+</html> -->
