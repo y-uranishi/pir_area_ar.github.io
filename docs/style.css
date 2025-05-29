@@ -18,7 +18,9 @@ h1
   display: grid;
   grid-template-columns: repeat(1, 1fr); /* 横2列に固定 */
   gap: 50px;
-  margin-top: 80px;
+  margin-top: 80px auto;
+  max-width: 900px;          /* 最大幅を設定（お好みで調整） */
+  padding: 0 20px;           /* スマホで左右の余白を確保 */
 }
 
 @media screen and (max-width: 600px) {
