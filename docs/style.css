@@ -21,7 +21,7 @@ h1
   margin-top: 80px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr; /* スマホでは1列に */
   }
@@ -58,62 +58,3 @@ model-viewer
 .ar-button:hover {
   background-color: #0052a3;
 }
-
-
-/* 以下、コメントアウト */
-/* body
-{
-    width: auto;
-} */
-
-
-
-/* #custom-ar-button
-{
-    font-size: 100px;
-    position:absolute;
-    right:16px;
-    bottom: 16px;
-    left: 16px;
-    border: 1px solid black;
-} */
-
-/* .hotspot
-{
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: blue;
-    box-sizing: border-box;
-    pointer-events: none;
-} */
-
-/* .hotspot[slot="hotspot-hand"]
-{
-    --min-hotspot-opacity: 0;
-    background-color: red;
-} */
-
-/* .hotspot[slot="hotspot-foot"]:not([data-visible])
-{
-    background-color: transparent;
-    border: 3px solid blue;
-} */
-
-/* .annotation
-{
-    background-color:chartreuse;
-    position: absolute;
-    transform: translate(10px, 10px);
-    border-radius: 10px;
-    padding: 10px;
-    width:200px;
-} */
-
-  /* This keeps child nodes hidden while the element loads */
-/* :not(:defined) > * 
-{
-    display: none;
-} */
